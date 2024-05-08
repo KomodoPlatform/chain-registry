@@ -1,0 +1,32 @@
+{
+    "$schema": "../ibc_data.schema.json",
+    "chain_1": {
+      "chain_name": "cosmoshub",
+      "client_id": "07-tendermint-1316",
+      "connection_id": "connection-1048"
+    },
+    "chain_2": {
+      "chain_name": "nucleus",
+      "client_id": "07-tendermint-4",
+      "connection_id": "connection-7"
+    },
+    "channels": [
+      {
+        "chain_1": {
+          "channel_id": "channel-920",
+          "port_id": "transfer"
+        },
+        "chain_2": {
+          "channel_id": "channel-7",
+          "port_id": "transfer"
+        },
+        "ordering": "unordered",
+        "version": "ics20-1",
+        "tags": {
+          "status": "live",
+          "preferred": true,
+          "dex": "cosmoshub"
+        }
+      }
+    ]
+  }
